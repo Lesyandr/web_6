@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3 Column Layout</title>
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <img class="logo" src="assets/img/owl.png" alt="logo">
+</header>
+
+<div class="container">
+    <main class="center column">
+        <article>
+            <h1>Contact</h1>
+
+            <form class="form-wrapper" method="POST">
+                <div class="col user-col w-50">
+                    <h2>User details</h2>
+                    <div class="form-group">
+                        <label for="name">Full name *</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="form-group birthday">
+                        <label for="birthday">Your birthday *</label>
+                        <input type="text" id="birthday">
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select name="gender" id="gender">
+                            <option value="" selected hidden></option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group country">
+                        <label for="country">Country *</label>
+                        <select name="country" id="country">
+                            <option value="" selected hidden></option>
+                            <option value="United States">United States</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Ukraine">Ukraine</option>
+                        </select>
+                    </div>
+                    <div class="form-group phone">
+                        <label for="phone">Phone *</label>
+                        <input type="tel" id="phone">
+                        <div class="input-helper">
+                            <span class="float-left">Mobile: 094 231 234</span>
+                            <span class="float-right">Fixed: 1234 1234</span>
+                        </div>
+                    </div>
+                    <div class="form-group bio clear-both">
+                        <label for="bio">Bio</label>
+                        <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+                        <div class="input-helper">
+                            <span class="float-left">Tell us about yourself</span>
+                            <span class="float-right">
+                            <span class="current">0</span>
+                            /
+                            <span class="max">256</span>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col account-col w-50">
+                    <h2>Account details</h2>
+                    <div class="form-group">
+                        <label for="username">Username*</label>
+                        <input type="text" id="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password*</label>
+                        <input type="password" id="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm_password">Confirm Password*</label>
+                        <input type="password" id="confirm_password">
+                    </div>
+                    <div class="form-group">
+                        <label class="label-full custom_checkbox" for="terms"><span>I accept terms and conditions</span>
+                            <input type="checkbox" id="terms">
+                            <span class="checkmark"></span>
+                        </label>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+
+        </article>
+    </main>
+
+    <nav class="left column">
+        <h3>Left heading</h3>
+        <ul>
+            <li><a href="index.html">Home page</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="slider.html">Slider</a></li>
+            <li><a href="table.html">Table</a></li>
+        </ul>
+
+        <h3>Left heading</h3>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
+            <li><a href="#">Link 6</a></li>
+        </ul>
+    </nav>
+
+    <div class="right column">
+        <h3>Right heading</h3>
+        <p></p>
+    </div>
+</div>
+
+<div class="footer-wrapper">
+    <footer class="footer">
+        <img class="logo" src="assets/img/owl.png" alt="logo">
+    </footer>
+</div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
